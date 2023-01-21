@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    background-color: #111111;
+}
+.greeting{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.greeting__text{
+    flex: 3;
+}
+.greeting__text h1{
+    font-size: 60vh;
+    color: #333333; 
+    cursor: default;
+    /* колір тексту можна зробити цікавим переливаючим гредієнтом */
+}
+.greeting__img{
+    flex: 1;
+}
+.greeting__img img{
+    width: 100%;
+}
+.name{
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: rebeccapurple;
+}
+.name__text{
+}
+.name__text h2{
+    font-size: 18vw;
+    color: rgb(24, 5, 9);
+    cursor: default;
+}
+.profession{
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background: url('./img/bg1.png');
+}
+.profession h2{
+    font-size: 15vw;
+    color: orchid;
+    cursor: default;
+}
+.cat-love{
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background: rebeccapurple url('./img/bg2.png');
+}
+.cat-love h2{
+    font-size: 10vw;
+    color: rgb(24, 5, 9);
+    cursor: default;
+}
+.projects{
+
+}
+.projects-title{
+
+}
+.project{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+.phone{
+
+}
+.phone img{
+
+}
+.scren{
+    overflow: auto;
+}
+.phone-app{
+
+}
+.project__detail{
+
+}
+.project__title{
+
+}
+.project__description{
+    
+}
+.project__button{
+
+}
