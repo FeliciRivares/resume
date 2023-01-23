@@ -4,6 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    border: none;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -58,7 +59,7 @@
     cursor: default;
 }
 .cat-love{
-    height: 100vh;
+    height: 60vh;
     display: flex;
     text-align: center;
     align-items: center;
@@ -70,37 +71,118 @@
     cursor: default;
 }
 .projects{
+    display: flex;
+    flex-direction: column;
+    gap: 30vw;
+    padding: 0 100px;
+    
 
 }
 .projects-title{
-
+    font-size: 10vw;
+    color: #333333;
 }
 .project{
-    height: 100vh;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 100px;
+    height: 100vh;
+    overflow: hidden;
+
+}
+.project-reverse{
+    flex-direction: row-reverse;
 }
 .phone{
-
+    flex: 1;
+    height: 600px;
+    width: 300px;
+    position: relative;
 }
 .phone img{
 
 }
 .scren{
-    overflow: auto;
+    width: 264px;
+    height: 567px;
+    overflow: scroll;
+    position: absolute;
+    top: 17px;
+    left: 18px;
+    border-radius: 26px;
+}
+.scren::-webkit-scrollbar{
+    display: none;
 }
 .phone-app{
-
+    width: 100%;
 }
 .project__detail{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vw;
 
 }
 .project__title{
+    font-size: 8vw;
+    color: #555;
+
 
 }
-.project__description{
+.ptoject__description{
+    font-size: 20px;
+    color: #555;
+    text-align: justify;
+    line-height: 25px;
     
 }
 .project__button{
-
+    padding: 15px 20px;
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #555;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.project__button::after{
+    content: "View Demo";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background: #555;
+    color: #111111;
+    text-align: center;
+    transition: all 800ms ease;
+    padding: 15px 0;
+}
+.project__button:hover::after{
+    left: 0;
+}
+.laptope {
+    flex: 1;
+    height: 600px;
+    width: 700px;
+    position: relative;
+}
+.laptope__scren{
+    width: 620px;
+    height: 567px;
+    overflow: scroll;
+    position: absolute;
+    top: 17px;
+    left: 18px;
+    border-radius: 26px;
+}
+.laptope__scren::-webkit-scrollbar{
+    display: none;
+}
+.laptope-app {
+    width: 100%;
 }
