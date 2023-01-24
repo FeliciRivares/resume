@@ -171,18 +171,78 @@
     width: 700px;
     position: relative;
 }
-.laptope__scren{
-    width: 620px;
-    height: 567px;
+.laptope-scren{
+    width: 451px;
+    height: 282px;
     overflow: scroll;
     position: absolute;
-    top: 17px;
-    left: 18px;
-    border-radius: 26px;
+    top: 19px;
+    left: 68px;
 }
-.laptope__scren::-webkit-scrollbar{
+.laptope-scren::-webkit-scrollbar{
     display: none;
 }
 .laptope-app {
     width: 100%;
+    height: 100%;
+}
+/* записаити відео роботи екрану  */
+.github {
+    height: 100vh;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.github__title {
+    font-size: 5vw;
+    color: #555;
+    text-align: center;
+    
+}
+.github__title a{
+    text-transform: uppercase;
+    color: #333;
+    transition: all 400ms ease-in;
+
+}
+.github__title a:hover{
+    color: rgb(31, 57, 29);
+
+}
+.github__item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.github__mouns {
+    display: flex;
+    justify-content: space-evenly;
+    color: #333;
+    padding-bottom: 10px;
+}
+.github__boxis {
+    width: 820px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding-bottom: 3vw;
+    cursor: pointer;
+}
+.github__box{
+    height: 15px;
+    width: 15px;
+    border: #333 1px solid;
+    
+}
+.github__boxis:hover .active:nth-child(2n + 1){
+    background-color: rgb(31, 200, 31);
+    transition: all 900ms ease-out;
+}
+.github__boxis:hover .active:nth-child(2n){
+    background-color: rgb(7, 82, 7);
+    transition: all 800ms ease-in;
+}
+.active:nth-child(4n){
+    background-color: rgb(31, 62, 31);
 }
