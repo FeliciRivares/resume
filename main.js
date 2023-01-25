@@ -1,4 +1,14 @@
-const githubBoxis = document.querySelector('.github__boxis');
+const githubBoxis = document.querySelector('.github__boxis'),
+      greetingText = document.querySelector('.greeting__text'),
+      greetingImg = document.querySelector('.greeting__img'),
+      nameText = document.querySelector('.name__text'),
+      profession = document.querySelector('.profession_container'),
+      catLove = document.querySelector('.cat-love_container'),
+      professionText = document.querySelector('.profession'),
+      catLoveText = document.querySelector('.cat-love'),
+      projectsTitle = document.querySelector('.projects-title'),
+      laptope = document.querySelectorAll('.laptope'),
+      phoneImg = document.querySelectorAll('.phone');
 
 for(let i = 0; i < 366; i++){
     const list = [
@@ -23,3 +33,17 @@ for(let i = 0; i < 366; i++){
     elem.classList = list.includes(i) ? 'github__box active' : 'github__box'
     githubBoxis.appendChild(elem);
 }
+window.addEventListener('scroll', () => {
+  let scroll = window.scrollY;
+  greetingText.style.transform = `translateY(${scroll * 0.7}px)`
+  greetingImg.style.transform = `translate(${scroll * 0.3}px, ${scroll * 0.1}px)`
+  nameText.style.transform = `translateX(${scroll * 0.1}px)`
+  profession.style.backgroundPositionY = `${scroll * 0.5}px`
+  catLove.style.backgroundPositionY = `-${scroll * 0.5}px`
+  professionText.style.transform = `translateX(calc( 200vh - ${scroll}px ))`
+  catLoveText.style.transform = `translateX(calc( -300vh + ${scroll}px ))`
+  projectsTitle.style.transform = `translateY(calc(360vh - ${scroll}px ))`
+  phoneImg[0].style.transform  = `translateX(calc( 440vh - ${scroll}px ))`
+  phoneImg[1].style.transform  = `translateX(calc( 700vh - ${scroll}px ))`
+  laptope[0].style.transform  = `translateX(calc( 560vh - ${scroll}px ))`
+})
